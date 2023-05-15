@@ -29,11 +29,15 @@ body {
 }
 
 .logo {
-  height: 30px;
-  width: 46px;
-  background-size: 47px;
-  background-image: url('images/sofa-logo.png');
+  height: 50px;
+  width: 100px;
+  background-size: 50px;
+  background-image: url('https://p.kindpng.com/picc/s/357-3575891_mid-century-modern-yellow-sofa-hd-png-download.png');
+   background-size: cover; 
+   background-position: center;
+  background-repeat: no-repeat;
   margin: 20px;
+  
 }
 
 .user-container {
@@ -51,6 +55,8 @@ body {
   border-radius: 20px;
   padding: 10px;
   box-shadow: rgb(0 0 0 / 12%) 0 1px 8px;
+  
+
 }
 
 .footer {

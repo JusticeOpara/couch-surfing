@@ -5,13 +5,19 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
   <title>COUCH-SURFING</title>
 </head>
 
 <body>
 
   <div class="nav-bar">
-    <div class="logo"></div>
+    <div class="logo">
+      <!-- <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"><path fill="currentColor" 
+        d="M12.5 7c0-1.11.89-2 2-2H18c1.1 0 2 .9 2 2v2.16c-1.16.41-2 1.51-2 2.81V14h-5.5V7M6 11.96V14h5.5V7c0-1.11-.89-2-2-2H6c-1.1 0-2 .9-2 
+        2v2.15c1.16.41 2 1.52 2 2.81m14.66-1.93c-.98.16-1.66 1.09-1.66 
+        2.09V15H5v-3a2 2 0 1 0-4 0v5c0 1.1.9 2 2 2v2h2v-2h14v2h2v-2c1.1 0 2-.9 2-2v-5c0-1.21-1.09-2.18-2.34-1.97Z"/></svg> -->
+    </div>
     <h3 class="user-container">Welcome
       <span id="returning-user"></span>
       <span id="user"></span>
@@ -19,8 +25,13 @@
   </div>
 
   <div class="container">
-    <div class="main-image"></div>
-    <h5 id="reviews"></h5>
+    <div class="main-image">
+
+    </div>
+    <h5>
+      <span id="reviews"></span>
+    </h5>
+   
     <button>Get reviews</button>
     <div class="reviews"></div>
     <div class="break"></div>
@@ -31,7 +42,7 @@
   <div class="footer"></div>
 
 
-  <script type="module" src="/src/main.ts"></script>
+  <script type="module" src="/src/index.ts"></script>
 </body>
 
 </html>
