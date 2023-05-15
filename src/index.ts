@@ -12,7 +12,7 @@ const button = document.querySelector('button')
 const footer = document.querySelector('.footer')
 
 
-// let isLoggedIn: boolean
+ let isLoggedIn: boolean
 
 enum Permissions {
     ADMIN = 'ADMIN',
