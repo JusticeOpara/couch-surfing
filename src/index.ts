@@ -198,9 +198,9 @@ class MainProperty {
     'images/italian-property.jpg',
     'images/estate-property.jpeg',
     'images/states-property.webp',
-    'images/poland-property.jpg',
-    'images/malaysia-estsate.jpg',
-    'images/malaysia-property.jpg'
+    'images/italian-property.jpg',
+    'images/malaysia-property.jpg',
+    'images/london-property.jpg'
   ];
   
   function changeImage() {

@@ -85,7 +85,7 @@ body {
   width: 500px; /* Set the width of the container */
   height: 300px; /* Set the height of the container */
   position: relative; /* Set position to enable absolute positioning of the image */
-  background-color: blue;
+  
 }
 .main-image img {
   width: 100%; /* Make the image width 100% of the container */
