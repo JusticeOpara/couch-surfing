@@ -163,29 +163,57 @@ button!.addEventListener('click', () => addReviews(reviews))
 let currentLocation: [string, string, number] = ['London', '11.03', 17]
 footer!.innerHTML = currentLocation[0] + ' ' + currentLocation[1] + ' ' + currentLocation[2] + '°'
 
-// Classes
-class MainProperty {
-    src: string
-    title: string
-    reviews: Review[]
-    constructor(src: string, title: string, reviews: Review[]) {
-        this.src = src
-        this.title = title
-        this.reviews = reviews
-    }
-}
 
-let yourMainProperty = new MainProperty(
+class MainProperty {
+    src: string;
+    title: string;
+    reviews: Review[];
+  
+    constructor(src: string, title: string, reviews: Review[]) {
+      this.src = src;
+      this.title = title;
+      this.reviews = reviews;
+    }
+  }
+  
+  let yourMainProperty = new MainProperty(
     'images/italian-property.jpg',
     'Italian House',
-    [{
+    [
+      {
         name: 'Olive',
         stars: 5,
         loyaltyUser: LoyaltyUser.GOLD_USER,
-        date: '12-04-2021'
-    }])
+        date: '12-04-2021',
+      },
+    ]
+  );
+  
+  const mainImageContainer = document.querySelector('.main-image');
+  const image = document.createElement('img');
+  let currentIndex = 0; // Current index of the displayed image
+  
+  // Array of image URLs to cycle through
+  const images = [
+    'images/italian-property.jpg',
+    'images/estate-property.jpeg',
+    'images/states-property.webp',
+    'images/poland-property.jpg',
+    'images/malaysia-estsate.jpg',
+    'images/malaysia-property.jpg'
+  ];
+  
+  function changeImage() {
+    image.setAttribute('src', images[currentIndex]);
+    currentIndex = (currentIndex + 1) % images.length;
+  }
+  
+  // Call the changeImage function every 3 seconds (adjust the interval as needed)
+  setInterval(changeImage, 3000);
+  
+  // Initial image setup
+  image.setAttribute('src', yourMainProperty.src);
+  mainImageContainer?.appendChild(image);
+  
 
-const mainImageContainer = document.querySelector('.main-image')
-const image = document.createElement('img')
-image.setAttribute('src', yourMainProperty.src)
-mainImageContainer?.appendChild(image)
+

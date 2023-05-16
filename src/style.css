@@ -81,3 +81,17 @@ body {
   width: 90%;
   background-color: coral;
 }
+.main-image{
+  width: 500px; /* Set the width of the container */
+  height: 300px; /* Set the height of the container */
+  position: relative; /* Set position to enable absolute positioning of the image */
+  background-color: blue;
+}
+.main-image img {
+  width: 100%; /* Make the image width 100% of the container */
+  height: 100%; /* Make the image height 100% of the container */
+  object-fit: cover; /* Resize the image to cover the container while preserving aspect ratio */
+  position: absolute; /* Position the image absolutely within the container */
+  top: 0;
+  left: 0;
+}

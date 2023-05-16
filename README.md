@@ -5,4 +5,4 @@ This project is built with HTML, CSS, Typescript.
 
 ## Get Started
 
-- [👉🏼 Vist website](https://justiceopara.github.io/couch-surfing/)
+- [👉🏼 Vist website](https://steady-kitsune-6f9a33.netlify.app/)
