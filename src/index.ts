@@ -1,7 +1,10 @@
 
 import { showReviewTotal, populateUser, showDetails, getTopTwoReviews } from './utils'
 import { Price } from './types'
-
+import italianProperty from '../images/italian-property.jpg'
+import londonProperty from '../images/london-property.jpg'
+import malaysiaProperty from '../images/malaysia-property.jpg'
+import stateProperty from '../images/states-property.webp'
 import { LoyaltyUser, Permissions } from './enums'
 import Review from './interfaces'
 import './style.css'
@@ -16,24 +19,6 @@ const footer = document.querySelector('.footer')
 // @ts-ignore
 let isLoggedIn: boolean;
 
-
-// enum Permissions {
-//     ADMIN = 'ADMIN',
-//     READ_ONLY = 'READ_ONLY'
-// }
-
-// enum LoyaltyUser {
-//     GOLD_USER = 'GOLD_USER',
-//     SILVER_USER = 'SILVER_USER',
-//     BRONZE_USER = 'BRONZE_USER'
-// }
-
-// interface Review {
-//     name: string;
-//     stars: number;
-//     loyaltyUser: LoyaltyUser;
-//     date: string;
-// }
 
 // Reviews
 const reviews: Review[] = [
@@ -96,7 +81,7 @@ const properties: Property[] = [
         isAvailable: true
     },
     {
-        // https://pic.le-cdn.com/thumbs/520x390/08/1/properties/Property-7192ff854ff0df6cfe4ee6f90f0907ad-128582353.jpg
+        
         image: 'https://media.architecturaldigest.com/photos/61322b96cf69d71d4a0d38a7/16:9/w_2560%2Cc_limit/OWO%2520apartment%2520terrace.jpeg',
         title: 'Polish Cottage',
         price: 34,
@@ -195,12 +180,10 @@ class MainProperty {
   
   // Array of image URLs to cycle through
   const images = [
-    'images/italian-property.jpg',
-    'images/estate-property.jpeg',
-    'images/states-property.webp',
-    'images/italian-property.jpg',
-    'images/malaysia-property.jpg',
-    'images/london-property.jpg'
+    italianProperty,
+    londonProperty,
+    malaysiaProperty,
+    stateProperty
   ];
   
   function changeImage() {
